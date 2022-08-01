@@ -1,0 +1,91 @@
+.refresh-template {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    &,
+    & > div {
+      box-sizing: border-box;
+    }
+    background: #137eff;
+    border: 2px solid #137eff;
+    border-radius: 4px;
+    .refresh-template-content {
+      padding: 8px;
+      flex: 1 0 auto;
+      cursor: pointer;
+      .refresh-template-title {
+        color: #fff;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        .icon {
+          margin-right: 5px;
+            display: inline-block;
+            width: 25px;
+            .btn-refresh-sync{
+              background-color:transparent;
+              box-shadow:none;
+              color: #fff;
+              border:0px;
+              font-size: 15px;
+            }
+        }
+        .title {
+          letter-spacing: 1px;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  
+  .offline-template {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    &,
+    & > div {
+      box-sizing: border-box;
+    }
+    background: #5F5F5F;
+    border: 2px solid #000;
+    border-radius: 4px;
+    .offline-template-content {
+      padding: 8px;
+      flex: 1 0 auto;
+      cursor: pointer;
+      .offline-template-title {
+        color: #fff;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        .icon {
+          margin-right: 5px;
+            display: inline-block;
+            width: 40px;
+            .btn-offline-cloud-slach{
+              background-color:transparent;
+              box-shadow:none;
+              color: #fff;
+              border:0px;
+              font-size: 20px;
+            }
+        }
+        .title {
+          letter-spacing: 1px;
+          font-size: 14px;
+          font-weight: bold;
+          width: 240px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }

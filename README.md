@@ -1,2 +1,2 @@
 # vue3Vite
-vue3ViteJs
+Skeletorvue3Vite

@@ -6,14 +6,14 @@ const messages = {
     en: {
         m: en
     },
-    es: {
+    sp: {
         m: es
     }
 };
 const i18n = createI18n({
     legacy: true,
     globalInjection: true,
-    locale: "es", // set locale
+    locale: "sp", // set locale
     fallbackLocale: "en", // set fallback locale
     messages // set locale messages
 });

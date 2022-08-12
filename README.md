@@ -21,26 +21,26 @@ selecte option: Vite Preview (Vuetify 3 + Vite)
 Install ESLint + Prettier
 npm install --save-dev eslint prettier eslint-plugin-vue eslint-config-prettier
 
-Install Vue Router
-npm install vue-router@4
-
-
-Install Vuex
-npm install vuex@next --save
-
 npm install sass
 npm install bootstrap
-
-npm install vue-i18n@9
-npm install --save-dev @intlify/vite-plugin-vue-i18n
-npm install -D vite-plugin-i18n-resources
-npm install -D vite-plugin-environment
 
 Install para reemplezar require()
 npm install -D vite-plugin-glob
 
+Install Vue Router
+npm install vue-router@4
+
 Install axios
 npm install axios -S
+
+Install Vuex
+npm install vuex@next --save
+
+npm install vue-i18n@9
+npm install -D vite-plugin-i18n-resources
+
+npm install -D vite-plugin-environment
+
 
 .eslintrc.js:
 module.exports = {

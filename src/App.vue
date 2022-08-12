@@ -2,32 +2,54 @@
   <v-app>
     <v-main>
       <MainMenu/>
-          <div class="refresh-template">
-            <div class="refresh-template-content" @click="refreshApp">
-              <div class="refresh-template-title">
-                <span class="icon">
-                  <button class="btn-refresh-sync">
-                    <i class="fas fa-sync-alt"></i>
-                  </button>
-                </span>
-                <span class="title">New content is available; please refresh.</span>
-              </div>
-            </div>
+      <div class="refresh-template">
+        <div class="refresh-template-content" @click="refreshApp">
+          <div class="refresh-template-title">
+            <span class="icon">
+              <button class="btn-refresh-sync">
+                <i class="fas fa-sync-alt"></i>
+              </button>
+            </span>
+            <span class="title">New content is available; please refresh.</span>
           </div>
-          <br>
-          <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+        </div>
+      </div>
+      <br>
+      <div class="container" style="border: 1px solid blue;">
+        <div class="row" style="border: 1px solid red;">
+          <div class="col" style="border: 1px solid green;">
+            1 of 2
           </div>
+          <div class="col" style="border: 1px solid blue;">
+            2 of 2
+          </div>
+        </div>
+        <div class="row" style="border: 1px solid green;">
+          <div class="col" style="border: 1px solid blue;">
+            1 of 3
+          </div>
+          <div class="col" style="border: 1px solid red;">
+            2 of 3
+          </div>
+          <div class="col" style="border: 1px solid black;">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </div>
       <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
+        <router-link to="/">{{ $t("m.mHome") }}</router-link> |
+        <router-link to="/about">{{ $t("m.mAbout") }}</router-link> |
         <SelectLanguage/>
       </nav>
       <router-view />
@@ -39,19 +61,22 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 import SelectLanguage from "./components/App/SelectLanguage.vue";
 import MainFooter from "./views/Layouts/mainFooterView.vue";
 import MainMenu from "./views/Layouts/mainMenuView.vue";
 export default {
     name: "App",
     components: {
-    // HelloWorld,
+        HelloWorld,
         SelectLanguage,
         MainMenu,
         MainFooter
     },
-    data () {}
+
+    data: () => ({
+    //
+    })
 };
 </script>
 <style lang="scss">

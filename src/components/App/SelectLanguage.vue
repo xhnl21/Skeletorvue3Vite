@@ -3,15 +3,17 @@
     <select v-model="$i18n.locale">
         <option v-for="(locale, i) in locales" :key="`locale-${i}`" :value="locale">
         {{ locale }}
+            <!-- <label v-if="locale == 'en'">es</label>
+            <label v-if="locale == 'sp'">in</label> -->
         </option>
-    </select>  
+    </select>
 </template>
 <script>
 export default {
     name: "SelectLanguage",
     data () {
         return {
-            locales: ["es", "en"]
+            locales: ["sp", "en"]
         };
     },
     created () {
